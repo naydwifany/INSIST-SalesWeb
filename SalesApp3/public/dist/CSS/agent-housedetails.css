@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Agent House Details*/
+.section-agent-house-details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container-page {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    min-height: 100vh;
+}
+
+.container-scene {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    width: 100%;
+    height:300px;
+    gap: 20px;
+}
+
+.slider {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+}
+
+.slider img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container-info {
+    max-width: 400px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left;
+}
+
+.container-info h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.container-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.three-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between; 
+    width: 100%;   
+}
+
+.btn-agent {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agent h4{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.btn-agent p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.btn-wa, .btn-favorite {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agent{
+    background-color: #2cb5e7;
+    width: 60%;
+}
+
+.btn-wa {
+    background-color: rgb(34, 216, 34);
+    width: 70px;
+}
+
+.btn-wa:hover {
+    background-color: rgb(29, 172, 29);
+}
+
+.btn-favorite {
+    width: 70px;
+    background-color: rgb(26, 26, 152);
+}
+
+.btn-favorite:hover {
+    background-color: rgb(19, 17, 86);
+}
+
+.container-long-details {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    width: 100%; 
+    margin-top: 70px;  
+}
+
+.container-description, .container-location{
+    text-align: left;
+    width: 50%;
+    border: 2px solid gray;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container-description h3, .container-location h3{
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.container-description p, .container-location p{
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .section-agent-house-details {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 0 15px; 
+    }
+    
+    .container-scene {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        height: auto;
+        gap: 50px;
+        padding: 25px;
+        margin: 0 auto; 
+        margin-bottom: 60px;
+    }
+    
+    .slider img {
+        width: 370px;
+        height: 250px;
+    }
+
+    .container-long-details {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center; 
+        margin: 0 auto; 
+    }
+
+    .container-description, .container-location {
+        width: 45%; 
+        max-width: 45%;
+        margin-bottom: 30px; 
+        min-height: 600px;
+    }
+}
+  
+@media screen and (max-width: 710px) {
+    .container-scene {
+        padding: 25px;
+        margin: 0 auto; 
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+    
+    .container-info{
+        max-width: 320px;
+    }
+
+    .btn-agent{
+        width: 200px;
+        padding-left: 15px;
+    }
+
+    .btn-agent p{
+        font-size: 11px;
+    }
+
+    .btn-wa, .btn-favorite{
+        font-size: small;
+    }
+
+    .btn-wa, .btn-favorite {
+        width: 60px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-long-details {
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 10px;   
+    }
+
+    .container-description, .container-location {
+        min-width: 320px; 
+        margin-bottom: 30px; 
+        min-height: 600px;
+    }
+}
+
+.two-buttons {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  
+  .btn-edithouse, .btn-delete {
+    color: white;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn-edithouse {
+    width: 60%;
+    background-color: #20dd46;
+}
+
+.btn-edithouse:hover {
+    background-color: #d6f14f;
+}
+
+.btn-delete {
+    width: 40%;
+    background-color: rgb(198, 20, 20);
+}
+
+.btn-delete:hover {
+    background-color: rgb(222, 75, 75);
+}
+/*Agent House Details*/
